@@ -28,6 +28,16 @@ Scenario('Attempt to create a single employe with wrong date format ', () => {
         assert.fail("Test failed");
     }
 });
+Scenario('Attempt to create a single employe with wrong email format ', () => {
+    const negativeData = {
+        email: 'xxxxxx'
+    };
+    employePage.attemptsToCreateEmploye(employeData.firstName, employeData.lastName, employeData.startDate, negativeData.email);
+    const selectorStartDate = locate('[ng-model="selectedEmployee.email"].ng-invalid');
+    if (!selectorStartDate) {
+        assert.fail("Test failed");
+    }
+});
 Scenario('Attempt to create a single employe with empty fields ', () => {
     employePage.attemptsToCreateEmploye('', '', '', '');
     const selectorFirstName = locate('[ng-model="selectedEmployee.firstName"].ng-invalid');

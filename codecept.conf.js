@@ -15,7 +15,7 @@ exports.config = {
 			waitForNavigation: 'networkidle0',
 		},
 		MyHelper: {
-			require: './tests/helper/employe_helper.js'
+			require: './tests/employe_helper.js'
 		  }
 	},
 	include: {
