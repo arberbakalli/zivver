@@ -54,8 +54,8 @@ allure serve output
     │   └───────login					# Folder
     │           └────── loginTest.js			# Feature file/ Test file
     │
-    ├── .gitignore					# Ignores: node_modules & output folder
-    ├── codecept.conf.js				# All config's are stored here URL, user, environments etc
+    ├── .gitignore						# Ignores: node_modules & output folder
+    ├── codecept.conf.js					# All config's are stored here URL, user, environments etc
     ├── jsconfig.json					# auto generated +
     ├── package-lock.json					# +
     ├── package.json					# +
