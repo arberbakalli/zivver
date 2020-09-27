@@ -13,8 +13,6 @@ const employeData = {
 };
 Before((loginPage) => {
 	loginPage.login();
-	employePage.deleteEmployeByName(employeData.firstName, employeData.lastName);
-	employePage.createEmploye(employeData.firstName, employeData.lastName, employeData.startDate, employeData.email);
 });
 Scenario('Update a single employe ', async () => {
 	const updateData = {
