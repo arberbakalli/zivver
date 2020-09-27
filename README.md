@@ -35,33 +35,6 @@ Generating a report simply use the command:
 ```
 allure serve output
 ```
-## Folder Structure
-
-    .
-    ├── helper						# Folder
-    │   └───── employe_helper.js				# File which we can
-    │
-    ├── pages						# Data and logic layer, all variables and methods are stored in this folder here
-    │   ├───── employePage.js				# Holds all methods of employe that can be reusable code
-    │   └────── loginPage.js				# Same applies here too
-    │
-    ├── tests						# Automated tests
-    │   ├────── employe					# All methods around employe are put in this folder here
-    │   │       ├────── createEmployeTest.js		# Holds the positive and negative cases
-    │   │       ├────── deleteEmployeTest.js		# 
-    │   │       └────── updateEmployeTest.js		#
-    │   │
-    │   └───────login					# Folder
-    │           └────── loginTest.js			# Feature file/ Test file
-    │
-    ├── .gitignore						# Ignores: node_modules & output folder
-    ├── codecept.conf.js					# All config's are stored here URL, user, environments etc
-    ├── jsconfig.json					# auto generated +
-    ├── package-lock.json					# +
-    ├── package.json					# +
-    ├── README.md						# +
-    ├── steps_file.json					# +
-    └── steps.ds.ts						# +
     
 ## Page classes
 Page classe contains data for different selectors example
