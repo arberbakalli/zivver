@@ -23,9 +23,9 @@ exports.config = {
 		loginPage: './pages/loginPage.js',
 		employePage:'./pages/employePage.js'
 	},
-	oath:{
-			username:'Luke',
-			password:'Skywalker'
+	auth:{
+			username:process.env.CODECEPT_USER ||'Luke',
+			password:process.env.CODECEPT_PASSWORD ||'Skywalker'
 	},
 	bootstrap: null,
 	mocha: {},

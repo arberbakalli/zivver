@@ -15,9 +15,9 @@ To get all the required js libraries in, run
 npm install codeceptjs puppeteer --save-dev
 ```
 
-To run all your tests with a pretty print use the: 
+To run all your tests use the: 
 ```
-npx codeceptjs run --debug
+npx codeceptjs run
 ```
 To run a specific test edit the codecept.conf.js file and its export.config tests for running a specific test file
 ```
@@ -94,11 +94,3 @@ Scenario('Create a single employe ', () => {
 etc...
 ```
 
-### Optional section
-**Extensions I used:**
-
-* Atom One Dark Theme
-* Material Icon Theme
-* Beautify
-* Remove empty lines
-* Remote WSL

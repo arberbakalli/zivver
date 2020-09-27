@@ -14,7 +14,7 @@ module.exports = {
     I.fillField(this.fields.password, Password);
     I.click(this.fields.login);
   },
-  login(Username = config.oath.username, Password = config.oath.password) {
+  login(Username = config.auth.username, Password = config.auth.password) {
     this.common(Username, Password);
   },
   attemptToLogin(Username = config.oath.username, Password = config.oath.password) {
