@@ -51,6 +51,7 @@ module.exports = {
         this.commonEmploye(firstName, lastName, startDate, email);
     },
     getSelectorFromEmploye(firstName, lastName) {
+        I.waitForVisible('#employee-list',5);
         var employeSelector;
         try {
             employeSelector = locate('li')

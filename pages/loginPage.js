@@ -16,8 +16,9 @@ module.exports = {
   },
   login(Username = config.auth.username, Password = config.auth.password) {
     this.common(Username, Password);
+    I.waitForElement('#employee-list');
   },
-  attemptToLogin(Username = config.oath.username, Password = config.oath.password) {
+  attemptToLogin(Username = config.auth.username, Password = config.auth.password) {
     this.common(Username, Password);
     I.seeCurrentUrlEquals(config.helpers.Puppeteer.url, 10);
   }
